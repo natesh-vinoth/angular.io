@@ -1,0 +1,32 @@
+.navbar-brand img
+{
+  margin-top: -8px;
+}
+.navbar
+{
+    background-color: black;
+}
+.navbar a
+{
+  color: white;
+}
+.fa
+{
+  color: white;
+}
+.fa:hover
+{
+  color: darkblue;
+}
+.dropdown-menu
+{
+  background-color: black;
+}
+.dropdown-menu a:hover
+{
+  color: #777;
+}
+.dropdown-menu a
+{
+  text-decoration: none;
+}

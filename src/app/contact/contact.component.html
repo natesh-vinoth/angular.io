@@ -1,0 +1,47 @@
+<br>
+<div class="container">
+  <div class="col-md-3 bg-success">
+    <div class="form-group">
+      <label> Name </label>
+      <input type="text" class="form-control" placeholder="Enter Name" [(ngModel)]="uname" #name>
+    </div>
+
+    <div class="form-group">
+      <label> Email </label>
+      <input type="text" class="form-control" placeholder="Enter Email" [(ngModel)]="uemail" #email>
+    </div>
+
+    <div class="form-group">
+      <label> Mobile Number </label>
+      <input type="text" class="form-control" placeholder="Enter Mobile Number" [(ngModel)]="umobile" #mobile>
+    </div>
+
+    <div class="form-group">
+      <label> Gender </label>
+      <input type="text" class="form-control" placeholder="Enter Gender" [(ngModel)]="ugender" #gender>
+    </div>
+
+    <div class="form-group text-center">
+      <button class="btn btn-success" (click)="saveuser(name.value,email.value,mobile.value,gender.value)"> Save </button>
+    </div>
+
+  </div>
+  <div class="col-md-9">
+    <table class="table table-bordered">
+      <tr>
+          <th> Name </th>
+          <th> Email </th>
+          <th> Mobile Number </th>
+          <th> Gender </th>
+      </tr>
+      
+      <tr *ngFor = "let x of item1">
+        <td> {{x.Name}} </td>
+        <td> {{x.Email}} </td>
+        <td> {{x.Mobile}} </td>
+        <td> {{x.Gender}} </td>
+    </tr>
+
+    </table>
+  </div>
+</div> 
